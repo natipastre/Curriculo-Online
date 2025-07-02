@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currículo - Natália Baptista Pastre</title>
+  <style>
+    :root {
+      --primary-color: #0077b6;
+      --secondary-color: #023e8a;
+      --background-color: #f8f9fa;
+      --card-color: #ffffff;
+      --text-color: #333333;
+      --accent-color: #0096c7;
+      --border-radius: 12px;
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 40px 35px;
+      background-color: var(--card-color);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: var(--border-radius);
+      transition: box-shadow 0.3s ease;
+    }
+    .container:hover {
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    h1, h2, h3, h4 {
+      color: var(--primary-color);
+      margin-top: 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.3em;
+    }
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 3px solid var(--secondary-color);
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+
+    p, li {
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+
+    ul {
+      padding-left: 1.5em;
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #e0e0e0;
+      margin: 40px 0;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    /* Contact Info - custom layout */
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 40px;
+      font-weight: 600;
+      margin-bottom: 50px;
+      color: var(--secondary-color);
+    }
+    .contact-info > div {
+      min-width: 140px;
+      flex: 1 1 180px;
+    }
+    .contact-info p {
+      margin: 4px 0;
+      font-weight: 500;
+      color: var(--text-color);
+    }
+    .contact-info p strong {
+      color: var(--primary-color);
+    }
+
+    /* Age and civil status stacked */
+    .age-status {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: var(--secondary-color);
+      max-width: 140px;
+    }
+
+    /* Portfolios & profiles & Objective text spacing */
+    .section p {
+      font-weight: 500;
+    }
+
+    /* Separating tools as a list */
+    .tools-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+      color: var(--text-color);
+      font-weight: 400;
+    }
+
+    /* Nested lists styling */
+    ul ul {
+      list-style-type: circle;
+      margin-top: 8px;
+    }
+
+    /* Section title background */
+    .section-title {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .contact-info {
+        flex-direction: column;
+      }
+      .age-status {
+        max-width: 100%;
+        flex-direction: row;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Natália Baptista Pastre</h1>
+
+    <div class="contact-info">
+      <div class="age-status">
+        
+       
+      </div>
+
+      <div>
+        
+        <p><strong>Endereço:</strong> Rua Issa Tamer, 20 - Vale do Sol, Araraquara - SP</p>
+        <p><strong>Email:</strong> <a href="mailto:natalia.pastre@yahoo.com.br">natalia.pastre@yahoo.com.br</a></p>
+        <p><strong>Telefone:</strong> <a href="tel:+5516997135203">(16) 99713-5203</a></p>
+        <p><strong>Estado Civil:</strong> Solteira</p>
+         <p><strong>34 anos</strong></p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Portfólios e Perfis</div>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/natalia-pastre/" target="_blank" rel="noopener noreferrer">natalia-pastre</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/natipastre/" target="_blank" rel="noopener noreferrer">natipastre</a></p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Objetivo</div>
+      <p>
+        Atuar como <strong>Desenvolvedora Front-End Júnior</strong>, unindo experiência administrativa à construção de interfaces digitais intuitivas e funcionais.
+      </p>
+      <p><strong>Ferramentas e Tecnologias:</strong></p>
+      <ul class="tools-list">
+        <li>Git / GitHub</li>
+        <li>SQL</li>
+        <li>Figma</li>
+        <li>VS Code</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Formação Acadêmica</div>
+      <ul>
+        <li><strong>Análise e Desenvolvimento de Sistemas</strong> | Faculdade Unicesumar | 2024 – 2026 (Cursando)</li>
+        <li><strong>Pós-Graduação em Gestão Empresarial</strong> | Uniara | Concluído</li>
+        <li><strong>Graduação em Administração</strong> | Uniara | Concluído</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Experiência Profissional</div>
+      <ul>
+        <li>
+          <strong>Auxiliar de Manutenção</strong> | Let's Terceirização de Frota | Araraquara, SP (06/2021 - Atual)
+          <ul>
+            <li>Gestão administrativa da frota, controle de contratos e análise de dados.</li>
+            <li>Atendimento a fornecedores, aprovação de orçamentos e controle de manutenções.</li>
+            <li>Elaboração de relatórios e dashboards.</li>
+            <li>Implantação de melhorias e automação de processos.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Assistente Administrativo</strong> | Peres Diesel Veículos | Araraquara, SP (04/2018 - 05/2021)
+          <ul>
+            <li>Criação de planilhas e dashboards gerenciais.</li>
+            <li>Gestão de dados financeiros e apoio em reuniões estratégicas.</li>
+            <li>Suporte às áreas técnica e comercial.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Vendedora</strong> | Peres Diesel Veículos | Araraquara, SP (07/2014 - 10/2017)
+          <ul>
+            <li>Atendimento ao cliente e vendas de pneus para caminhão.</li>
+            <li>Emissão de NF-e, controle de estoque e registros internos.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Jovem Aprendiz</strong> | COEDUCAR | Araraquara, SP (01/2011 - 02/2012)
+          <ul>
+            <li>Apoio aos setores administrativo, financeiro e RH.</li>
+            <li>Controle de planilhas e atendimento ao público.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Auxiliar Administrativo</strong> | C&A Baptista Araraquara ME | Araraquara, SP (01/2008 - 12/2010)
+          <ul>
+            <li>Rotinas financeiras, controle de fluxo de caixa e conferência de documentos financeiros.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Cursos e Certificações</div>
+      <ul>
+        <li>HTML5, CSS3, JavaScript – Prática Autônoma</li>
+        <li>Excel Avançado e Power BI</li>
+        <li>SQL para manipulação de dados</li>
+        <li>Figma (básico)</li>
+        <li>Comunicação | Autogestão | Aprendizado Contínuo</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Habilidades e Competências</div>
+      <ul>
+        <li>Facilidade de trabalho em equipe</li>
+        <li>Comprometimento com prazos e qualidade</li>
+        <li>Adaptabilidade a diferentes funções e ambientes</li>
+        <li>Boa capacidade de seguir instruções e aprender rápido</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Idiomas</div>
+      <ul>
+        <li>Inglês: Intermediário (leitura, escrita e conversação)</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
